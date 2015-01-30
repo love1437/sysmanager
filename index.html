@@ -34,9 +34,7 @@
 
         <h1 class="heading h-01"><img src="images/title.png" /></h1>
         <p class="sub-header copy-02">
-			IP:<span id="IP"></span><br>
-			USER:<span id="USERNAME"></span><br>
-			PASS:<span id="PASSWORD"></span><br>
+			河蟹
 		</p>
         <a href="javascript:void(0);" class="arrow-down">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="arrow-down" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve" class=" iconic-injected-svg inject-me">
@@ -53,21 +51,7 @@
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.10.2.min.js"><\/script>');</script>
   <script src="js/plugins.js"></script>
   <script src="js/application.js"></script>
-	<script>
-		$(document).ready(function(){
-			var xhr = new XMLHttpRequest();
-			xhr.open('GET', 'http://yema.sturgeon.mopaas.com/VpnServlet');
-			xhr.onreadystatechange = function(e) {
-			  if(xhr.readyState === 4){
-				eval('var vpn = ' + xhr.responseText);
-				$("#IP").text(vpn.ip);
-				$("#USERNAME").text(vpn.user);
-				$("#PASSWORD").text(vpn.pass);
-			  }
-			};
-			xhr.send();
-		});
-	</script>
+
 	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254120369'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1254120369%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
 </body>
 </html>
